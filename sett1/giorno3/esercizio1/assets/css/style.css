@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+#centralogo{
+    
+        margin:0 auto;
+        width: auto;
+        text-align: center;
+        background-color: #fefbf1;
+    } 
+
+
+h4.titolo{
+font-size: small;
+    color:#004d4d;
+    margin-top: 10px;
+border-top: 10px
+
+
+ 
+}
+
+
+#bordo{
+    background-color: black;
+    border-top: 5px solid black;
+    
+ 
+    
+}
+
+#video{
+    text-align: center;
+}
+a:link{
+    color:#004d4d
+
+    
+    
+}
+
+#centrato{
+    text-align: center;
+}
+#sinistra{
+ color:red 
+}

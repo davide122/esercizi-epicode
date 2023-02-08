@@ -109,9 +109,3 @@ if (val < 10 && val > 5) {
     console.log("Uguale a 10 o maggiore");
   }
 //undicesimo esericizio
-const oggetto={
-    city:0
-    oggetto:function(city){
-        this.city="toronto";
-    }
-}

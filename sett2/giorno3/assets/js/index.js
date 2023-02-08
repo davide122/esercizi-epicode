@@ -1,15 +1,16 @@
 //primo esercizio
 {
-let numero1 = 23
-let numero2 = 11
+let numero1 = 1;
+let numero2 = 10;
 if (numero1 > numero2) {
-    console.log(numero1);
+    document.getElementById("primoVal").innerHTML=numero1;
 }
 
 else if (numero1 < numero2) {;
-console.log(numero2);
+    document.getElementById("primoVal").innerHTML=numero2;
 }
 }
+
 //secondo esercizio
 const numero3 = 2;
 let numero4 = 5;
@@ -64,7 +65,7 @@ else if(totalShoppingCart <= 50) {
 }
 
 //sesto esercizio
-var sconto=(totalShoppingCart/0,8)
+var sconto=(totalShoppingCart*0,8)
 var totale2=sconto+spedizione
 {
 if (totalShoppingCart > 50) {
@@ -109,3 +110,37 @@ if (val < 10 && val > 5) {
     console.log("Uguale a 10 o maggiore");
   }
 //undicesimo esericizio
+const me={
+    name:"john",
+    lastname: "doe",
+    skills: ["javascript","html","css"],
+
+}
+me.city="toronto";
+console.log(me);
+
+//dodicesimo esercizio
+me.lastName="";
+console.log(me)
+
+//tredicesimo esercizio
+
+me.skills.pop();
+console.log(me)
+
+//Quattordicesimo esercizio
+var array=[];
+array.push(1)
+array.push(2)
+array.push(3)
+array.push(4)
+array.push(5)
+array.push(6)
+array.push(7)
+array.push(8)
+array.push(9)
+array.push(10)
+
+//quindicesimo esercizio
+array[9]
+console.log(array)

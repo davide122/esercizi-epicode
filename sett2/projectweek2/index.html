@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcolatrice</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="centra">
+<h1>La mia Calcolatrice in JS</h1>
+
+    <div class="superiore">
+
+<input type="text" id="valori" name="valori">
+
+    </div>
+
+    <div class="mezzo">
+<button class="calcolo"type="button" id="cancella" onclick="cancella('c')">C</button>
+<button class="calcolo"type="button" id="diviso" onclick="calco('/')">÷</button>
+<button class="calcolo" type="button" id="cancella" onclick="calco('*')">x</button>
+ <button class="calcolo" type="button" id="cancella" onclick="calco('-')">-</button>
+ <button class="calcolo" type="button" id="cancella" onclick="calco('+')">+</button>
+
+    </div>
+
+    <div class="inbasso">
+<button type="button" id="7" onclick="calco('7')">7</button>
+<button type="button" id="8" onclick="calco('8')">8</button>
+<button type="button" id="9" onclick="calco('9')">9</button>
+<button type="button" id="4" onclick="calco('4')">4</button>
+<button type="button" id="5" onclick="calco('5')">5</button>
+<button type="button" id="6" onclick="calco('6')">6</button>
+
+
+</button>
+
+
+    </div>
+<div class="inbasso2">
+<button type="button" id="1" onclick="calco('1')">1</button>
+<button type="button" id="2" onclick="calco('2')">2</button> 
+<button type="button" id="3" onclick="calco('3')">3</button>
+
+</div>
+    <div class="bassissimo">
+       
+        <button type="button" id="virgola" onclick="calco('.')">,</button>
+        <button type="button" id="0" onclick="calco('0')">0</button>
+        <button class="calcolo" type="button" id="uguale" onclick="Totale()">=</button>
+       
+    </div>
+</div>
+
+<script src="assets/javascript/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+h1{
+    border: solid;
+    border-radius: 10%;
+    text-shadow: 0px 3px 3px rgba(19, 81, 43, 0.979), 1px 1px 20px rgba(158,205,206,0.89);
+    background-color: rgba(49, 66, 53, 0.89) ;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    background: rgb(32,43,24);
+background: linear-gradient(77deg, rgba(32,43,24,0.9248949579831933) 14%, rgba(69,94,20,1) 57%);
+    width: 100%;
+    height: 100vh;
+}
+
+.centra {
+   
+    height: 95vh;
+    width: 25%;
+    border-radius: 10%;
+    background-color:rgb(40, 69, 69) ;
+    box-shadow:3px 9px 13px 12px rgba(0,0,0,0.94);
+text-align: center;
+color: white;
+}
+.superiore{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+    border-style: none;
+  
+}
+
+.superiore>input{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    text-align: right;
+    font-size: 100px;
+    border: none;
+    background-color: rgba(63, 122, 102, 0.145);
+    outline: none;
+    color: white;
+}
+
+.mezzo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 70px;
+    ;
+}
+
+button{
+    font-size: 22px;
+    background-color: rgb(46, 117, 128);
+    color:white;
+    cursor: pointer;
+    border-radius: 10%;
+    
+}
+
+.bassissimo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+  height: 70px;
+  
+
+}
+
+.inbasso{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    height: 70px;
+}
+
+.inbasso2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    height: 70px;
+}
+
+.calcolo{
+    background-color:rgb(79, 124, 126);
+}
+button:focus{
+   background-color: cadetblue;
+}
+button:hover{
+    background-color: cadetblue;  
+   
+}
+

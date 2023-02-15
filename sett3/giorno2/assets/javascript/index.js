@@ -244,7 +244,7 @@ const btnRicerca2 = document.getElementById('ricerca2');
 var arraySearch = [];
 
 btnRicerca2.addEventListener('click', function () {
-  const search = document.getElementById('name').value.toLowerCase();
+  const search = document.getElementById('nome').value.toLowerCase();
   ricerca(search)
 })
 
@@ -263,7 +263,7 @@ function scriviArray(arraySearch) {
   for (i = 0; i < arraySearch.length; i++) {
     document.getElementById("risultati").innerHTML += `<h2>${arraySearch[i].Title}</h2><h3>${arraySearch[i].Year}</h3><h3>${arraySearch[i].imdbID}</h3><h3>${arraySearch[i].Type}</h3><img src="${arraySearch[i].Poster}" alt="poster del fiml"> `
     
-   
+
 
   }
 }

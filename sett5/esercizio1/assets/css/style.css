@@ -233,12 +233,26 @@ table{
    
 }
 iframe{
-    display:flex;
+    display:inline;
+    width: 50%;
    
 }
 section{
+width: 50%;
+border-radius: 20px;
 
-display:flex;
+}
+
+.containerc{
+display: flex;
+
+}
+
+
+aside>div{
+    margin:0 auto;
+    width: 33.33%;
+    display: inline-block;
+     margin: -3px;
 }
 }
-

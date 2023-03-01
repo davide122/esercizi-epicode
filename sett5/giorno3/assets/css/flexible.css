@@ -1,0 +1,10 @@
+#flex{
+display: flex;
+background-color: rgba(255, 166, 0, 0.404);
+padding: 20px;
+border-radius: 10px;
+flex-direction: column;
+justify-content: start;
+border: 0px;
+}
+

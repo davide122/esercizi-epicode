@@ -1,0 +1,179 @@
+
+
+#frase{
+    width: 600px;
+    border: 1px solid black;
+    display: flex;
+
+}
+#parola1{
+    opacity: 0;
+    color: rgb(57, 57, 187);
+    position: absolute;
+    left: 6em;
+    animation: animazione 3s ;
+}
+@keyframes animazione {
+	0% {
+		animation-timing-function: ease-in;
+		
+		transform: translateY(-250px);
+        transform:rotate(100deg)
+
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+        opacity: 1;
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+        opacity: 1;
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+        opacity: 1;
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+        opacity: 1;
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+        opacity: 1;
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+        opacity: 0;
+	}
+}
+
+#parola2{
+    color: rgb(14, 14, 73);
+    opacity: 0;
+    position: absolute;
+  left: 6em;
+           
+    animation: animazione2 6s;
+}
+@keyframes animazione2 {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 1;
+		transform: translateY(-250px);
+
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+        opacity: 1;
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+        opacity: 1;
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+        opacity: 1;
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+        opacity: 1;
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+        opacity: 0;
+	}
+}
+#parola3{
+    color: blueviolet;
+    opacity: 0;
+    position: absolute;
+  left: 6em;
+           
+    animation: animazione3 9s;
+}
+@keyframes animazione3 {
+	0% {
+		animation-timing-function: ease-in;
+		
+		transform: translateY(-250px);
+
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+        opacity: 1;
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+         opacity: 1;
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+       
+	}
+}

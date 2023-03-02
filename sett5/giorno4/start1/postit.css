@@ -1,0 +1,50 @@
+body{
+    background-color: #696565;
+}
+
+#flexa{
+    display: flex;
+    justify-content: space-around;
+   
+  
+}
+#dividi{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.postIT{
+   width: 260px;
+   height: 260px;
+   color:black;
+   margin: 1em;
+   cursor: pointer;
+   transition-property: transform;
+transition-duration: 1s;
+font-size: 30px;
+display: flex;
+align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+    
+
+
+}
+.giallosx{
+    transform: rotate(-7deg);
+    background-color: rgba(255, 255, 0, 0.474);
+    
+
+}
+.verdedx{
+    transform: rotate(7deg);
+    background-color: green;
+}
+.violasx{
+    transform: rotate(-7deg);
+    background-color: rgba(137, 43, 226, 0.547);
+}
+.postIT:hover{
+    transform: rotate(0deg);
+    transform: scale(1.2);
+}

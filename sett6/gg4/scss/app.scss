@@ -1,0 +1,57 @@
+@import "./variabili";
+@import "./pulsanti";
+@import "./font";
+@import "./mixin";
+@import "./colori";
+@import "./animazioni";
+
+header{
+   
+}
+.navBar{
+    @include flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $colorenav;
+    margin-top: 0px;
+    width: 100%;
+    
+ul{
+    list-style: none;
+    color: $buttoncolor1;
+    display: flex;
+ li{
+ @include spaziature
+ }
+    
+}
+}
+
+body{
+    background-color: $backgroundcolor;
+    margin: 0;
+    padding: 0;
+}
+.container1{
+    @include flex;
+@include margini;
+box-shadow: 10px 10px 10px;
+animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+.griglia{
+    
+    @include flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .fotogriglia{
+        display: flex;
+        flex-wrap: wrap;
+       img{
+        width: 400px;
+       }
+    }
+}
+

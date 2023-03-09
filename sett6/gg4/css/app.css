@@ -1,0 +1,99 @@
+.button1 {
+  height: 100%;
+  border-radius: 20px;
+  outline: none;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(23, 59, 23);
+  padding: 7px;
+}
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+  25%, 55%, 75%, 87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.navBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(23, 59, 23);
+  margin-top: 0px;
+  width: 100%;
+}
+.navBar ul {
+  list-style: none;
+  color: green;
+  display: flex;
+}
+.navBar ul li {
+  margin: 5px;
+}
+
+body {
+  background-color: rgba(0, 1, 0, 0.414);
+  margin: 0;
+  padding: 0;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 10px 10px 10px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+.griglia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.griglia .fotogriglia {
+  display: flex;
+  flex-wrap: wrap;
+}
+.griglia .fotogriglia img {
+  width: 400px;
+}/*# sourceMappingURL=app.css.map */

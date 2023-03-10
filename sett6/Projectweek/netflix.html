@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Netflix-assets/assets/css/animation.css">
+</head>
+
+<body class=" text-light" style="background-color: rgba(20,20,20,255);">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark text-dark">
+      <div class="container-fluid">
+        <img src="Netflix-assets/assets/netflix_logo.png" class="" alt="" width="120px" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""><img src="Netflix-assets/assets/avatar.png" width="40px" alt=""></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Tv Shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Recently added</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">My list</a>
+            </li>
+          </ul>
+
+
+
+          <ul class="navbar-nav ">
+             <li class="nav-item d-flex me-2">
+                <a href="#" class="text-light nav-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-search" viewBox="0 0 16 16">
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                  </svg>
+                </a>
+
+                <a href="#" class="text-light nav-link">
+                KIDS
+                </a>
+             </li>
+
+             <li class="nav-items me-2">
+             <a href="#" class="text-light nav-link">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+              <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+            </svg>
+             </a>
+             </li>
+
+             <li class="nav-items me-2">
+              <img src="Netflix-assets/assets/avatar.png" alt="" width="40px">
+             </li>
+             
+
+             <li class="nav-items me-2">
+              <a href="#" class="text-light nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+             </li>
+</a>
+
+</ul>
+            
+                
+             
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!-- fine della Nav bar e inizio del div principale!-->
+<div class="ms-4 me-5 mt-3">
+
+<div class="d-flex justify-content-between">
+<div class="d-flex align-items-center ">
+<h1>TV Shows</h1>
+
+
+<button class="bg-black text-light border border-light d-flex justify-content-between ms-4 align-items-center " style="width: 150px; height: 45px;" >
+  Genres
+
+  <a class="text-light">
+   
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+    </svg>
+
+  </a>
+</button>
+</div>
+
+
+<div class="d-flex">
+
+<button type="button" class="btn-outline-light bg-dark text-light border border-light pe-2 mb-4 ps-2">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+  </svg>
+</button>
+
+
+<button type="button" class="btn-outline-light bg-dark text-light border border-light  pe-2 mb-4 ps-2 ">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
+    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z"/>
+  </svg>
+</button>
+</div>
+</div>
+<main>
+<h3 class="my-3">Trending Now</h3>
+<div class="d-flex">
+  <div class="row  gx-5 ">
+  <div class="col col-6 col-xl-2 col-xxl-2 hover-effect:hover">
+    <img src="Netflix-assets/assets/media/media0.webp"  width="245px" class="">
+  </div>
+  
+  <div class="col col-6 col-xl-2 col-xxl-2">
+    <img src="Netflix-assets/assets/media/media1.jpg" width="245px" alt="">
+  </div>
+
+  <div class="col col-6 col-xl-2 col-xxl-2">
+    <img src="Netflix-assets/assets/media/media2.webp" width="245px" alt="">
+  </div>
+  
+  <div class="col col-6 col-xl-2 col-xxl-2">
+   <img src="Netflix-assets/assets/media/media3.webp"  width="245px"alt="">
+  </div>
+  
+  <div class="col col-6 col-xl-2 col-xxl-2">
+     <img src="Netflix-assets/assets/media/media4.jpg" width="245px" alt="">
+  </div>
+  <div class="col col-6 col-xl-2 col-xxl-2">
+    <img src="Netflix-assets/assets/media/media5.webp" width="245px" alt="">
+  </div>
+ 
+</div>
+
+</div>
+
+
+<h3 class="my-3">Whatch it Again</h3>
+<div class="d-flex">
+  <div class="row  gx-5">
+  <div class="col col-6 col-xl-2 col-xxl-2">
+    <img src="Netflix-assets/assets/media/media6.jpg" width="245px" class="">
+  </div>
+  
+  <div class="col col-6 col-xl-2 col-xxl-2">
+    <img src="Netflix-assets/assets/media/media7.webp" width="245px" alt="">
+  </div>
+
+  <div class="col col-6 col-xl-2 col-xxl-2">
+    <img src="Netflix-assets/assets/media/media8.webp"  width="245px"alt="">
+  </div>
+  
+  <div class="col col-6 col-xl-2 col-xxl-2">
+   <img src="Netflix-assets/assets/media/media9.jpg"  width="245px"alt="">
+  </div>
+  
+  <div class="col col-6 col-xl-2 col-xxl-2">
+     <img src="Netflix-assets/assets/media/media10.jpg" width="245px" alt="">
+  </div>
+  <div class="col col-6 col-xl-2 col-xxl-2">
+    <img src="Netflix-assets/assets/media/media11.jpg"  width="245px"alt="">
+  </div>
+ 
+</div>
+
+</div>
+
+
+
+
+<h3 class="my-3">New Relases</h3>
+<div class="d-flex">
+  <div class="row gx-5 ">
+  <div class="col col-6 col-xl-2 col-xxl-2">
+    <img src="Netflix-assets/assets/media/media12.jpg" width="245px" class="">
+  </div>
+  
+  <div class="col col-6 col-xl-2 col-xxl-2">
+    <img src="Netflix-assets/assets/media/media13.jpg" width="245px" alt="">
+  </div>
+
+  <div class="col col-6 col-xl-2 col-xxl-2">
+    <img src="Netflix-assets/assets/media/media14.webp"  width="245px"alt="">
+  </div>
+  
+  <div class="col col-6 col-xl-2 col-xxl-2">
+   <img src="Netflix-assets/assets/media/media15.jpg"  width="245px"alt="">
+  </div>
+  
+  <div class="col col-6 col-xl-2 col-xxl-2">
+     <img src="Netflix-assets/assets/media/media16.webp" width="245px" alt="">
+  </div>
+  <div class="col col-6 col-xl-2 col-xxl-2">
+    <img src="Netflix-assets/assets/media/media17.jpg"  width="245px"alt="">
+  </div>
+
+</div>
+</div>
+
+
+</div>
+</main>
+
+
+
+
+<footer>
+
+  <div class="row ">
+    <div class="col col-3">
+      <ul>
+        <li>
+          audio and subtitles
+        </li>
+        <li>
+          media center
+        </li>
+<li>
+  privancy
+</li>
+<li>
+  contact us
+</li>
+
+
+
+      </ul>
+    </div>
+  </div>
+
+</footer>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

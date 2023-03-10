@@ -3,3 +3,18 @@ img:hover{
  cursor: pointer;
 animation-duration: 1s;
 }
+
+a,ul{
+    text-decoration: none;
+    list-style: none;
+}
+.realcolor{
+    background-color: rgba(20,20,20,255);
+}
+.placehold{
+    opacity: 50%;
+}
+.pulsanteall{
+    background-color: #ffffff;
+    background-color:#333333 ;
+}

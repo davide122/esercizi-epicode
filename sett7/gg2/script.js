@@ -47,21 +47,6 @@ function rimuovititolo (){
 }
 
 //----------------------------------------------------------
+controllo=0;
+let controllo = sessionStorage.getItem("temporimasto")
 
-let timerOutput = document.getElementById("timer1")
-let timerInput = document.getElementById("scrivi")
-let pulsante = document.getElementById("incrementa1")
-
-function salvaNumero (){
-    let numero = timerInput.value
-    console.log(numero)
-}
-
-function incrementa (){
-    for (i=0;i-salvaNumero;i++){
-        timerOutput=i++
-    }
-}
-
-pulsante.addEventListener("click",salvaNumero)
-pulsante.addEventListener("click",incrementa)

@@ -1,30 +1,72 @@
-const autorizzazione = "FIto8hVMFmoTSmSxEwE7pmoeEOAggRVEqJSsbvPdMCndh9vWVQ7siPGi"
+let autorizzazione = "FIto8hVMFmoTSmSxEwE7pmoeEOAggRVEqJSsbvPdMCndh9vWVQ7siPGi"
+let album = document.getElementById("foto-album")
+let url = "https://api.pexels.com/v1/search?query=horse";
+let url2= "https://api.pexels.com/v1/search?query=dog"
+let pulsante1 = document.getElementById("pulsante1")
+
+const arrayDF = (foto) =>{
+  album.innerHTML=``;
+  foto.foreach=(foto =>{
+    let newalbum = document.createElement("div");
+
+    newalbum.classList.add('col-md-4');
+    newalbum.innerHTML=`<div class="card mb-4 shadow-sm">
+    <img src="${foto.src.original}" height="200px">
+    <div class="card-body">
+      <h5 class="card-title">${foto.alt}</h5>
+      <p class="card-text">
+        Photo description
+      </p>
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <div type="button" class="btn btn-sm btn-outline-secondary">
+            View
+          </div>
+          <div type="button" id="hide" onclick="nascondiCard()" class="btn btn-sm btn-outline-secondary">
+            HIDE
+          </div>
+        </div>
+        <small class="text-muted">${foto.id}</small>
+      </div>
+    </div>
+  </div>`;
+  album.appendChild(newalbum)
+  });
+}
+
+const carica =()=>{
+  fetch(url,{
+    headers:{
+      Authorization: autorizzazione
+    }
+
+  })
+  .then((Response)=>{
+    return Response.json();
+   
+  })
+   .then((foto)=>{
+    let arraydf = foto.photos;
+console.log(arraydf)
+arrayDF(arraydf);
+   })
 
 
-
-fetch("https://api.pexels.com/v1/search?query=tiger",{
-    Authorization: autorizzazione,
-
+.catch((err)=>{
+return console.log("ERROR")
 })
+}
 
 
-.then((response) => {
-  console.log('FINITA LA FETCH!')
-  console.log(response)
-  if (response.ok) {
-    return response.json()
-  } else {
-    // controllo aggiuntivo su response.ok
-    // questa riga vi fa finire automaticamente nel .catch()
-    return new Error('Problema nel parsing della response')
-  }
-})
-.then((photos) => {
-  console.log("ora è finita l'estrapolazione dei dati")
-  console.log('photos', photos)
 
 
-})
-.catch((err) => {
-  console.log(err)
-})
+
+
+
+
+
+
+
+
+
+pulsante1.addEventListener("click",carica)

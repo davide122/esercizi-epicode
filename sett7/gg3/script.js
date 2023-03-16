@@ -22,7 +22,50 @@ fetch("https://striveschool-api.herokuapp.com/books")
             </div>
         </div> `
             ;
+            const elimina = col.querySelector(".custom");
+      elimina.onclick = () => {
+        col.remove();
+      };
+      const aggiungi = col.querySelector(".bg-success")
+      aggiungi.onclick=() =>{
+       const ok = localStorage.setItem("Ciao",`${libri.title}`)
+       const prezzo = localStorage.setItem("prezzo",`${libri.price}$`)
+
+
+       const dove = document.getElementById("carrello")
+const x = document.createElement("div")
+       const a = document.createElement("p")
+       const b = document.createElement("h6")
+       b.innerText=localStorage.getItem("Ciao")
+       a.innerText = localStorage.getItem("prezzo")  
+       dove.appendChild(x)
+       x.appendChild(a)
+       x.appendChild(b)
+
+      
+}
+      
+
       card.appendChild(col);
     });
   })
   .catch((error) => console.log("CATCH", error))
+
+
+let pulsantechiudi = document.getElementById("pulsanteCarrello")
+console.log(pulsantechiudi)
+let carrellino = document.getElementById("carrello")
+pulsantechiudi.onclick=()=>{
+  carrellino.classList.add("rimuovi")
+
+
+  
+}
+
+let pulsanteapri = document.getElementById("pulsanteCarrellonext")
+let carrello = document.getElementById("carrello")
+pulsanteapri.onclick=()=>{
+  carrello.classList.remove("rimuovi")
+}
+
+  

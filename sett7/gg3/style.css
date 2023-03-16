@@ -1,0 +1,31 @@
+.carrello{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 300px;
+    background-color: rgb(94, 249, 249);
+    float: left;
+    position: fixed;
+    z-index: 1;
+}
+.pulsanteCarrello{
+    width: 70px;
+    background-color: transparent;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    right: 1px;
+    
+}
+
+.rimuovi{
+    display: none;
+}
+.pulsanteCarrellonext{
+    float: left;
+    position: fixed;
+}
+
+div{
+    border: 1px solid;
+}

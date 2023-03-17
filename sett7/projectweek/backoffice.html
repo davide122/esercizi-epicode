@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar color">
+            <div class="container-fluid  justify-content-center">
+            <img src="Il mio progetto.png" alt="" width="100px">
+             <a href=""><span class="navbar-brand mb-0 text-warning ">BackOffice</span></a> 
+             <a href=""><span class="navbar-brand mb-0 text-white ">Carrello</span></a> 
+             <a href="Crudazon.html"><span class="navbar-brand mb-0 text-white ">prodotti</span></a> 
+          </div>
+            </div>
+    </header>
+
+
+
+<main>
+   
+    <div class="row">
+        <div class="col col-6 text-center d-flex ">
+        <img src="Il mio progetto.png " width="90%" alt="">
+        <div class="me-5 my-5 text-center d-flex flex-direction-rowreverse">
+            <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nome del prodotto</label>
+                  <input
+                    class="form-control"
+                    id="name"
+                    aria-describedby="name input"
+                  
+                    required
+                  />
+                  <div class="mb-3">
+                    <label for="name" class="form-label">url del prodotto</label>
+                    <input
+                      class="form-control"
+                      id="image"
+                      aria-describedby="name input"
+                     
+                      required
+                    />
+                </div>
+                <div class="mb-3">
+                  <label for="description" class="form-label"
+                    >Event Description</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="description"
+                    rows="6"
+                    aria-describedby="name input"
+                  
+                    required
+                  ></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="price" class="form-label"> Price</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="price"
+                    aria-describedby="price input"
+                   
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="price" class="form-label">giorno </label>
+                  <input
+                    type="datetime-local"
+                    class="form-control"
+                    id="time"
+                    aria-describedby="date time input"
+                    required
+                  />
+                </div>
+                
+                <button type="submit" class="btn btn-primary">salva il prodotto</button>
+                <button
+                  type="button"
+                  class="btn btn-danger d-none"
+                  onclick="handleDelete()"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="currentColor"
+                    class="bi bi-trash3"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5ZM11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0H11Zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5h9.916Zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5Z"
+                    />
+                  </svg>
+                </button>
+            </div>
+              </form>
+ 
+      
+
+    </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+<script>
+const prodottiurl= "https://striveschool-api.herokuapp.com/api/product/"
+
+
+
+
+
+
+let form = document.getElementsByTagName("form")[0]
+form.addEventListener("submit",(e)=>{
+    e.preventDefault()
+
+    let elementinuovi ={
+        brand:document.getElementById("name").value,
+        name: document.getElementById('name').value,
+          description: document.getElementById('description').value,
+        price: document.getElementById('price').value,
+          time: document.getElementById('time').value,
+          imageUrl: document.getElementById("image").value
+         
+    }
+    console.log(elementinuovi)
+
+
+fetch("https://striveschool-api.herokuapp.com/api/product/", {
+    method:"POST",
+    body: JSON.stringify(elementinuovi),
+headers: {
+   
+Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MjQyNWY4MWI0MjAwMTM5YjI3ZDEiLCJpYXQiOjE2NzkwNDE1NzMsImV4cCI6MTY4MDI1MTE3M30.Qs2qb-R1HLs4mThvWR2VDXB77ghdDOTdrOgoxbhcI74",
+'content-type':"application/json",
+},
+}
+)
+.then((response)=>{
+    if(response.ok){
+        alert("prodotto salvato")
+    }else{
+        alert("problema nella creazione del prodotto")
+    }
+})
+.catch((err)=>{
+    console.log(err)
+})
+
+})
+</script>
+
+
+
+</body>
+</html>

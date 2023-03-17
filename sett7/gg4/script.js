@@ -70,3 +70,4 @@ return console.log("ERROR")
 
 
 pulsante1.addEventListener("click",carica)
+pulsante1.addEventListener("click",arrayDF)

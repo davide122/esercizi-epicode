@@ -1,9 +1,26 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+body{
+    font-family: 'Comfortaa', cursive;
+}
+
+
+
 .color{
 color: white;
 background-color:rgba(19,25,33,255);
+
 }
 
 .navbar a{
     text-decoration: none;
 }
 
+h1,h2,h3,h4,h5,p,a{
+  color:  #f8981d;
+}
+
+.amazonBlu{
+  color: rgba(19,25,33,255);
+  font-weight: 700;
+}

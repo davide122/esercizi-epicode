@@ -10,13 +10,13 @@
 </head>
 <body>
     
-    <header>
+    <header style="position: sticky; top: 0; z-index: 1;">
         <nav class="navbar color">
   <div class="container-fluid  justify-content-center">
   <img src="Il mio progetto.png" alt="" width="100px">
    <a href="backoffice.html"><span class="navbar-brand mb-0 text-white ">BackOffice</span></a> 
    <a href=""><span class="navbar-brand mb-0 text-white ">Carrello</span></a> 
-   <a href=""><span class="navbar-brand mb-0 text-warning ">prodotti</span></a> 
+   <a href=""><span class="navbar-brand mb-0  " style="color: #f8981d;">prodotti</span></a> 
 </div>
   </div>
 </nav>
@@ -25,8 +25,11 @@
 
 <main>
 
-    <div class="row my-5 mx-2 " id="appendi">
-      
+    <div class="row my-5 mx-2 f-3 " id="appendi">
+        <div class="spinner-grow text-dark d-flex flex-column justify-content-center align-items-center" role="status" id="nascondi">
+            <span class="visually-hidden">Loading...</span>
+          </div
+        
 
     </div>
 </div>

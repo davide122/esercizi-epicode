@@ -108,8 +108,9 @@ if(response.ok){
     document.getElementById("name").value = data.name
  document.getElementById('description').value=data.description
    document.getElementById('price').value=data.price
-   document.getElementById('time').value=data.time.slice(".")[0]
+   document.getElementById('time').value=data.time
   document.getElementById("image").value=data.imageUrl
+  document.getElementById("brand").value=data.name
   })
 
 
@@ -125,7 +126,7 @@ form.addEventListener("submit",(e)=>{
           description: document.getElementById('description').value,
         price: document.getElementById('price').value,
           time: document.getElementById('time').value,
-          imageUrl: document.getElementById("image").value
+          imageUrl: document.getElementById("imageUrl").value,
          
     }
     console.log(elementinuovi)
@@ -144,7 +145,7 @@ Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MjQy
 )
 .then((response)=>{
     if(response.ok){
-        alert()
+       alert("elementro creato correttamente")
     }else{
         alert("problema nella creazione del prodotto")
     }
@@ -177,7 +178,6 @@ Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MjQy
       return response.json()
     } else {
       return new Error('Errore nella gestione della chiamata')
-      // e vengo catapultato nel blocco catch
     }
   })
  
@@ -215,14 +215,7 @@ Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDE0MjQy
   })
 }
 
-function alert(){
-  let crea = document.createElement("div")
-
-}
 
 </script>
-
-
-
 </body>
 </html>

@@ -23,4 +23,9 @@ h1,h2,h3,h4,h5,p,a{
 .amazonBlu{
   color: rgba(19,25,33,255);
   font-weight: 700;
+  
+}
+
+.amazonCard{
+  background-color:#232f3e;
 }

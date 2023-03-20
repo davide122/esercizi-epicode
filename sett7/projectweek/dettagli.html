@@ -69,14 +69,16 @@ return response.json()
 .then((risposta)=>{
 const scrivi = document.getElementById("appendiqui")
 
-scrivi.innerHTML= `<div class="d-flex align-items-center justify-content-center my-2">
+scrivi.innerHTML= `<div class="d-flex flex-column align-items-center justify-content-center my-2 ">
   
-      <img src="${risposta.imageUrl}" alt="" width="300px" class="my-2 ">
+      <img src="${risposta.imageUrl}" alt="" width="300px" class=" ">
       <div class="d-flex flex-column mx-4 text-center ">
       <h1  class="my-2">${risposta.name}</h1>
       <H2  class="my-2">${risposta.description}</H2>
       <H3 v class="my-2">${risposta.price}$</H3>
-      <button type="button" class="btn btn-danger" id="eliminare">elmina</button>
+<div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-danger " id="eliminare" style="width:200px">elmina</button>
+      </div>
       </div>
       <div>
      
